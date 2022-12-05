@@ -7,19 +7,23 @@
     --logo-font: Norse-Bold;
 }
 
-body{
+body {
     box-sizing: border-box;
     margin: 0;
 }
 
-.brand-side{
+.container {
+    display: flex;
+}
+
+.brand-side {
     background-image: url('./img/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: cover;
-    width: 35vw;
+    width: 80vw;
     height: 100vh;
 }
 
-.dark-bg{
+.dark-bg {
     background-color: #00000063;
     height: 180px;
     position: relative;
@@ -30,8 +34,65 @@ body{
     gap: 10px;
 }
 
-.brand-name{
+.brand-name {
     font-family: var(--logo-font);
     font-size: 64px;
     color: #fff;
+}
+
+.text {
+    padding: 120px 50px 30px 50px;
+    background-color: #f7f7f7;
+}
+
+.form {
+    padding: 0 50px 10px 50px;
+}
+
+label,
+input {
+    display: block;
+}
+
+label {
+    font-size: 12px;
+}
+
+input {
+    padding: 4px 10px;
+    width: 200px;
+    font-size: 16px;
+    border: 2px solid #E5E7EB;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:valid {
+    border-color: #596D48;
+}
+
+.aside {
+    display: flex;
+    gap: 60px;
+}
+
+button {
+    display: block;
+    background-color: #596D48;
+    color: #ffffff;
+    padding: 10px 40px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
 }
