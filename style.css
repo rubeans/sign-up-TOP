@@ -73,7 +73,7 @@ input {
     box-shadow: 3px 3px 3px #c2c1c1;
 }
 
-input::placeholder{
+input::placeholder {
     color: #fff;
 }
 
@@ -87,6 +87,14 @@ input:focus {
 .aside {
     display: flex;
     gap: 60px;
+}
+
+#confirm-password{
+    margin: 4px;
+}
+
+.error-msg{
+    margin-left: 5px;
 }
 
 button {
