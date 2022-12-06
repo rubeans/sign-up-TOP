@@ -5,12 +5,13 @@
 
 :root {
     --logo-font: Norse-Bold;
+    --content-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
     box-sizing: border-box;
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--content-font)
 }
 
 .container {
@@ -20,8 +21,9 @@ body {
 .brand-side {
     background-image: url('./img/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: cover;
-    width: 70vw;
+    width: 40vw;
     height: 100vh;
+    flex-shrink: 0;
 }
 
 .dark-bg {
@@ -44,9 +46,8 @@ body {
 .text {
     padding: 50px 50px 30px 50px;
     background-color: #f7f7f7;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--content-font)
 }
-
 
 .form {
     padding: 0 50px 10px 50px;
@@ -62,7 +63,7 @@ label {
 }
 
 input {
-    padding: 8px 10px;
+    padding: 15px 20px;
     width: 200px;
     font-size: 16px;
     border: 1px solid #E5E7EB;
@@ -72,9 +73,15 @@ input {
     box-shadow: 3px 3px 3px #c2c1c1;
 }
 
+input::placeholder{
+    color: #fff;
+}
+
 input:focus {
     outline: none;
     border-color: #82b457;
+    background-color: #596D48;
+    color: #fff
 }
 
 .aside {
@@ -86,7 +93,7 @@ button {
     display: block;
     background-color: #596D48;
     color: #ffffff;
-    padding: 10px 40px;
+    padding: 15px 45px;
     font-weight: bolder;
     border: none;
     border-radius: 5px;
@@ -102,6 +109,5 @@ a {
 }
 
 /* TODO
- Fix background image to not end after scrolling
  Make a logic to not accept different passwords
   */
