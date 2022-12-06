@@ -10,6 +10,7 @@
 body {
     box-sizing: border-box;
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
 .brand-side {
     background-image: url('./img/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: cover;
-    width: 80vw;
+    width: 70vw;
     height: 100vh;
 }
 
@@ -41,9 +42,11 @@ body {
 }
 
 .text {
-    padding: 120px 50px 30px 50px;
+    padding: 50px 50px 30px 50px;
     background-color: #f7f7f7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 
 .form {
     padding: 0 50px 10px 50px;
@@ -59,20 +62,19 @@ label {
 }
 
 input {
-    padding: 4px 10px;
+    padding: 8px 10px;
     width: 200px;
     font-size: 16px;
-    border: 2px solid #E5E7EB;
+    border: 1px solid #E5E7EB;
     margin-bottom: 20px;
     border-radius: 5px;
+    outline: none !important;
+    box-shadow: 3px 3px 3px #c2c1c1;
 }
 
 input:focus {
-    border-color: blue;
-}
-
-input:valid {
-    border-color: #596D48;
+    outline: none;
+    border-color: #82b457;
 }
 
 .aside {
@@ -89,10 +91,12 @@ button {
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    margin-bottom: 30px;
+    margin: 30px 0 20px 0;
+    box-shadow: 3px 3px 3px #818181;
+    cursor: pointer;
 }
 
 a {
     text-decoration: none;
-    color: #596D48;
+    color: #4b7229;
 }

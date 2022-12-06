@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.0">
   <link rel="stylesheet" href="style.css">
   <title>Sign-up - TOP</title>
 </head>
@@ -30,14 +30,14 @@
       </div>
       <div class="form">
         <h2>Let's do this!</h2>
-        <form action="/" method="get">
+        <form action="" method="post">
           <div class="aside">
             <label for="first-name">FIRST NAME<input type="text" id="first-name" name="first-name" required placeholder="Rubens"></label>
             <label for="last-name">LAST NAME<input type="text" id="last-name" name="last-name" required placeholder="Fonseca"></label>
           </div>
           <div class="aside">
             <label for="email">EMAIL<input type="email" id="email" name="email" required placeholder="rubens@gmail.com"></label>
-            <label for="phone">PHONE NUMBER<input type="text" id="phone" name="phone" required placeholder="(DDD) 97203-7831"></label>
+            <label for="phone">PHONE NUMBER<input type="tel" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" id="phone" name="phone" required placeholder="(DDD)972037831"></label>
           </div>
           <div class="aside">
             <label for="password">PASSWORD<input type="password" id="password" name="password" required placeholder=""></label>
@@ -45,7 +45,7 @@
           </div>
           <div class="create-acc">
             <button type="submit">Create Account</button>
-            <span>Already have an account? <a href="#">Log in</a></span>
+            <span>Already have an account? <a href="#">Log in</a>.</span>
           </div>
         </form>
       </div>
