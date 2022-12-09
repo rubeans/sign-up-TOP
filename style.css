@@ -14,7 +14,7 @@ body {
     font-family: var(--content-font)
 }
 
-.container {
+.main-container {
     display: flex;
 }
 
@@ -22,7 +22,7 @@ body {
     background-image: url('./img/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: cover;
     width: 40vw;
-    height: 100vh;
+    min-height: 100vh;
     flex-shrink: 0;
 }
 
@@ -49,7 +49,7 @@ body {
     font-family: var(--content-font)
 }
 
-.form {
+.form-content {
     padding: 0 50px 10px 50px;
 }
 
@@ -89,12 +89,13 @@ input:focus {
     gap: 60px;
 }
 
-#confirm-password{
+#confirm-password {
     margin: 4px;
 }
 
-.error-msg{
-    margin-left: 5px;
+.msg {
+    margin-left: 7px;
+    font-weight: 600;
 }
 
 button {
