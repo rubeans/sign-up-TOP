@@ -43,10 +43,14 @@ body {
     color: #fff;
 }
 
+.form-side{
+    width: 100vw;
+}
+
 .text {
     padding: 50px 50px 30px 50px;
     background-color: #f7f7f7;
-    font-family: var(--content-font)
+    font-family: var(--content-font);
 }
 
 .form-content {
